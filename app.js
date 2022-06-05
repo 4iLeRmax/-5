@@ -1,0 +1,12 @@
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000
+});
+
+let counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 3){
+    counter =1;
+  }
+}, 5000);
