@@ -18,6 +18,16 @@ body{
   background: #141C24;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #141C24;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--blue);
+  border-radius: 10px;
+}
 
 /*----Header----*/
 #Header{
