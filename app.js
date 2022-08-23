@@ -10,3 +10,12 @@ setInterval(function(){
     counter =1;
   }
 }, 5000);
+
+let menu = document.querySelector('.burger__menu');
+let nav = document.querySelector('.navLinks');
+menu.addEventListener('click', ()=>{
+  nav.classList.toggle('active');
+});
+window.addEventListener('scroll', ()=>{
+  nav.classList.remove('active');
+})
