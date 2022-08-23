@@ -290,6 +290,9 @@ h6{
   align-items: center;
   padding: 80px 0 100px;
 }
+.lines{
+  display: none;
+}
 .icons .line2{
   width: 70px;
   height: 1px;
@@ -822,7 +825,7 @@ h6{
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    width: 450px;
+    width: 100%;
     justify-content: center;
   }
 
@@ -843,7 +846,7 @@ h6{
   .navLinks{
     flex-direction: column;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 4;
     top: 0;
     right: -100%;
@@ -881,8 +884,6 @@ h6{
   .hr{
     display: none;
   }
-  .hr2{
-  }
   .content h3{
     max-width: 142px;
     text-align: left;
@@ -905,7 +906,7 @@ h6{
     background: #fff;
     z-index: 99;
     position: absolute;
-    top: 98%;
+    top: 5%;
     right: 5%;
   }
   .burger__menu::after{
@@ -915,7 +916,7 @@ h6{
     background: #fff;
     z-index: 99;
     position: absolute;
-    top: calc(98% + 15px);
+    top: calc(5% + 15px);
     right: 5%;
   }
 
@@ -949,6 +950,43 @@ h6{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 100px;
+    position: relative;
+  }
+  .lines{
+    display: block;
+
+  }
+  .diagonal{
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    background-color: var(--blue);
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 0 0 15px var(--blue);
+  }
+  .lines::before{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px var(--blue);
+  }
+  .lines::after{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px var(--blue);
   }
 
 
@@ -963,9 +1001,22 @@ h6{
   }
   #Sub .cards .card{
     margin: 17px auto;
+    width: 100%;
   }
   .Сcenter{
     margin: 17px auto;
+    width: 100%;
+  }
+  .Сcenter a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  #Sub .cards .card a{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
   }
   #Sub h2{
     margin-bottom: calc(58px - 17px);

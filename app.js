@@ -18,4 +18,7 @@ menu.addEventListener('click', ()=>{
 });
 window.addEventListener('scroll', ()=>{
   nav.classList.remove('active');
-})
+});
+// if (nav.classList.contains('active'){
+
+// })
