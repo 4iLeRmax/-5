@@ -791,273 +791,6 @@ form .Button{
   color: #ABABAB;
   letter-spacing: 1px;
 }
-@media only screen and (max-width: 450px){
-  #Header .slider{
-    display: none;
-  }
-  .bg{
-    display: none;
-  }
-  .dn{
-    display: flex;
-    z-index: -4;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100%;
-    justify-content: center;
-  }
-  #Header nav{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    padding: 40px 5%;
-  }
-  .logo__small{
-    display: block;
-    z-index: 99;
-  }
-  .navLinks{
-    flex-direction: column;
-    width: 100%;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    right: -100%;
-    background: #141C24;
-    padding-top: calc(190px - 15px);
-    height: 1000px;
-    transition: right .3s ease;
-  }
-  .navLinks.active{
-    right: 0%;
-  }
-  nav img{
-    margin: 0;
-    display: none;
-  }
-  .navLinks li{
-    padding: 15px 0;
-    width: 90%;
-    text-align: center;
-  }
-  .navLinks li:nth-child(1) a{
-    border: 0;
-  }
-  .navLinks li:nth-child(1){
-    border-bottom: 1px solid var(--blue);
-  }
-  .content{
-    margin: 250px auto 0;
-    padding: 0 10%;
-  }
-  .hr{
-    display: none;
-  }
-  .content h3{
-    max-width: 142px;
-    text-align: left;
-  }
-  .content h1{
-    max-width: 284px;
-    text-align: left;
-    line-height: 60px;
-  }
-  .content a{
-    margin-top: 130px;
-  }
-  .burger__menu{
-    display: block; 
-  }
-  .burger__menu::before{
-    content: '';
-    height: 5px;
-    width: 50px;
-    background: #fff;
-    z-index: 99;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-  }
-  .burger__menu::after{
-    content: '';
-    height: 5px;
-    width: 50px;
-    background: #fff;
-    z-index: 99;
-    position: absolute;
-    top: calc(5% + 15px);
-    right: 5%;
-  }
-  #HowItWorks{
-    flex-direction: column-reverse;
-    border: 0;
-    padding: 0 5%;
-    margin: 0;
-    margin-top: 100px;
-  }
-  .first__img{
-    display: none;
-  }
-  .second__img{
-    display: flex;
-    width: 100%;
-  }
-  #Play{
-    border: 0;
-    padding: 100px 5% 0;
-    margin: 0;
-  }
-  .line2{
-    display: none;
-  }
-  #Play .icons{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 100px;
-    position: relative;
-  }
-  .lines{
-    display: block;
-  }
-  .diagonal{
-    width: 200px;
-    height: 1px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    background-color: var(--blue);
-    transform: translateX(-50%) rotate(-45deg);
-    box-shadow: 0 0 15px var(--blue);
-  }
-  .lines::before{
-    content: '';
-    width: 80px;
-    height: 1px;
-    background-color: var(--blue);
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 15px var(--blue);
-  }
-  .lines::after{
-    content: '';
-    width: 80px;
-    height: 1px;
-    background-color: var(--blue);
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 15px var(--blue);
-  }
-  #Sub{
-    display: flex;
-    flex-direction: column;
-    border: 0;
-  }
-  #Sub .cards{
-    flex-direction: column;
-  }
-  #Sub .cards .card{
-    margin: 17px auto;
-    width: 100%;
-  }
-  .Сcenter{
-    margin: 17px auto;
-    width: 100%;
-  }
-  .Сcenter a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-  }
-  #Sub .cards .card a{
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-  }
-  #Sub h2{
-    margin-bottom: calc(58px - 17px);
-  }
-  .line3{
-    display: none;
-  }
-  #Cross{
-    display: flex;
-    flex-direction: column;
-  }
-  #Cross img{
-    width: 100%;
-    top: 25%;
-  }
-  .Ctext{
-    position: relative;
-  }
-  .Ctext h2{
-    margin-bottom: 550px;
-  }
-  .circle2{
-    background: red;
-    filter: blur(0);
-    width: 400px;
-    height: 400px;
-    display: none;
-  }
-  #Map{
-    margin: 0;
-  }
-  #Map img{
-    width: 100%;
-  }
-  .h6{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  #Footer{
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  #Footer .l{
-    flex-direction: column;
-  }
-  #Footer .r{
-    flex-direction: column-reverse;
-  }
-  .r a{
-    margin: 0;
-  }
-  .main{
-    flex-direction: column;
-    width: 100%;
-  }
-  form{
-    align-items: center;
-    width: 100%;
-  }
-  form input{
-    width: 100%;
-  }
-  #download{
-    padding: 5%;
-  }
-  #download .text{
-    margin-bottom: 70px;
-  }
-  .os{
-    flex-direction: column;
-    align-items: center;
-  }
-  .os a{
-    margin: 0;
-    margin-bottom: 30px;
-  }
-}
 @media only screen and (max-width: 850px){
   #Header .slider{
     /* display: none; */
@@ -1188,6 +921,7 @@ form .Button{
     border: 0;
     padding: 100px 5% 0;
     margin: 0;
+    margin-bottom: 110px;
   }
   .line2{
     display: none;
@@ -1237,17 +971,23 @@ form .Button{
     display: flex;
     flex-direction: column;
     border: 0;
+    padding: 0 5%;
+    margin: 0;
   }
   #Sub .cards{
     flex-direction: column;
+    align-items: center;
   }
   #Sub .cards .card{
-    margin: 17px auto;
+    /* margin: 17px auto; */
+    margin: 0;
     width: 370px;
+    margin-bottom: 17px;
   }
   .Сcenter{
-    margin: 17px auto;
+    margin: 0;
     width: 370px;
+    margin-bottom: 17px;
   }
   .Сcenter a{
     width: 100%;
@@ -1308,6 +1048,276 @@ form .Button{
   }
   #Footer .r{
     /* flex-direction: column-reverse; */
+  }
+  .r a{
+    margin: 0;
+  }
+  .main{
+    flex-direction: column;
+    width: 100%;
+  }
+  form{
+    align-items: center;
+    width: 100%;
+  }
+  form input{
+    width: 100%;
+  }
+  #download{
+    padding: 5%;
+  }
+  #download .text{
+    margin-bottom: 70px;
+  }
+  .os{
+    flex-direction: column;
+    align-items: center;
+  }
+  .os a{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 450px){
+  #Header .slider{
+    display: none;
+  }
+  .bg{
+    display: none;
+  }
+  .dn{
+    display: flex;
+    z-index: -4;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+  }
+  #Header nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 40px 5%;
+  }
+  .logo__small{
+    display: block;
+    z-index: 99;
+  }
+  .navLinks{
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: -100%;
+    background: #141C24;
+    padding-top: calc(190px - 15px);
+    height: 1000px;
+    transition: right .3s ease;
+  }
+  .navLinks.active{
+    right: 0%;
+  }
+  nav img{
+    margin: 0;
+    display: none;
+  }
+  .navLinks li{
+    padding: 15px 0;
+    width: 90%;
+    text-align: center;
+  }
+  .navLinks li:nth-child(1) a{
+    border: 0;
+  }
+  .navLinks li:nth-child(1){
+    border-bottom: 1px solid var(--blue);
+  }
+  .content{
+    margin: 250px auto 0;
+    padding: 0 10%;
+  }
+  .hr{
+    display: none;
+  }
+  .content h3{
+    max-width: 142px;
+    text-align: left;
+  }
+  .content h1{
+    max-width: 284px;
+    text-align: left;
+    line-height: 60px;
+  }
+  .content a{
+    margin-top: 130px;
+  }
+  .burger__menu{
+    display: block; 
+  }
+  .burger__menu::before{
+    content: '';
+    height: 5px;
+    width: 50px;
+    background: #fff;
+    z-index: 99;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .burger__menu::after{
+    content: '';
+    height: 5px;
+    width: 50px;
+    background: #fff;
+    z-index: 99;
+    position: absolute;
+    top: calc(5% + 15px);
+    right: 5%;
+  }
+  #HowItWorks{
+    flex-direction: column-reverse;
+    border: 0;
+    padding: 0 5%;
+    margin: 0;
+    margin-top: 100px;
+  }
+  .first__img{
+    display: none;
+  }
+  .second__img{
+    display: flex;
+    width: 100%;
+  }
+  #Play{
+    border: 0;
+    padding: 100px 5% 0;
+    margin: 0;
+    margin-bottom: 110px;
+  }
+  .line2{
+    display: none;
+  }
+  #Play .icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    position: relative;
+  }
+  .lines{
+    display: block;
+  }
+  .diagonal{
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    background-color: var(--blue);
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 0 0 15px var(--blue);
+  }
+  .lines::before{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px var(--blue);
+  }
+  .lines::after{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px var(--blue);
+  }
+  #Sub{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+  }
+  #Sub .cards{
+    flex-direction: column;
+  }
+  #Sub .cards .card{
+    margin: 0;
+    width: 370px;
+    margin-bottom: 17px;
+  }
+  .Сcenter{
+    margin: 0;
+    width: 370px;
+    margin-bottom: 17px;
+  }
+  .Сcenter a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  #Sub .cards .card a{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+  #Sub h2{
+    margin-bottom: calc(58px - 17px);
+  }
+  .line3{
+    display: none;
+  }
+  #Cross{
+    display: flex;
+    flex-direction: column;
+  }
+  #Cross img{
+    width: 100%;
+    top: 25%;
+  }
+  .Ctext{
+    position: relative;
+  }
+  .Ctext h2{
+    margin-bottom: 550px;
+  }
+  .circle2{
+    background: red;
+    filter: blur(0);
+    width: 400px;
+    height: 400px;
+    display: none;
+  }
+  #Map{
+    margin: 0;
+  }
+  #Map img{
+    width: 100%;
+  }
+  .h6{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #Footer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #Footer .l{
+    flex-direction: column;
+  }
+  #Footer .r{
+    flex-direction: column-reverse;
   }
   .r a{
     margin: 0;
