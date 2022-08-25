@@ -50,9 +50,6 @@ body{
   transform: translateX(-50%);
   box-shadow: 0 0 80px rgba(9, 189, 242, 0.6);
   border: 0.5px solid #57D6FF;
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .slider .slides{
   width: 4600px;
@@ -70,28 +67,12 @@ body{
   margin-left: 0;
 }
 #radio2:checked ~ .first{
-  /* margin-left: -20%; */
   margin-left: -1400px;
 }
 #radio3:checked ~ .first{
-  /* margin-left: -40%; */
   margin-left: -2800px;
 }
 
-
-
-/* #Header .bg1{
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 80px rgba(9, 189, 242, 0.6);
-  border: 0.5px solid #57D6FF;
-  border-radius: 15px;
-  width: 1400px;
-  height: 786.6px;
-  position: absolute;
-  z-index: -1;
-} */
 #Header .bg1{
   width: 1400px;
   height: 786.6px;
